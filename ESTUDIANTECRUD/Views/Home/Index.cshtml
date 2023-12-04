@@ -1,0 +1,31 @@
+﻿@model ESTUDIANTECRUD.Models.Estudiante
+@{
+    ViewData["Title"] = "Eliminar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+    <link href="estilo.css" rel="stylesheet"  type="text/css" />
+</head>
+<body>
+	<div class="Contenedor">
+        
+        <div class="Inicio_se">
+            <p>Inicio de Sesion</p>
+            <form asp-action="Index" asp-controller="Home" method="post">
+                <label>Nombre</label>
+                <input class="form-control form-control-sm" asp-for="CedulaEstudiante" type="text" />
+                <label>Contraseña</label>
+                <input class="form-control form-control-sm" asp-for="Contrasena" type="password" />
+                
+                <button class="btn btn-primary btn-sm w-25"  type="submit" name="button">Ingresar</button>
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>
